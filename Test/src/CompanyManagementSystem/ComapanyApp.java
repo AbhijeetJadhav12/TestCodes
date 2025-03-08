@@ -68,16 +68,16 @@ public class ComapanyApp {
 				}
 				break;
 			case 3:
-				System.out.println("Employee Details");
-				Stream<String> lines = Files.lines(Path.of("D:\\practise\\EmpDetails\\emp.txt"));
-				System.out.println("Lines stream is " + lines);
-				lines.filter(n -> n.startsWith("1")).forEach(System.out::println);
+//				System.out.println("Employee Details");
+//				Stream<String> lines = Files.lines(Path.of("D:\\practise\\EmpDetails\\emp.txt"));
+//				System.out.println("Lines stream is " + lines);
+//				lines.filter(n -> n.startsWith("1")).forEach(System.out::println);
 //				lines.forEach(System.out::println);
 
-//				for (Employee e : employees) {
-//					System.out.println(
-//							e.getEmpId() + "\t" + e.getName() + "\t" + e.getDesignation() + "\t" + e.getSalary());
-//				}
+				for (Employee e : employees) {
+					System.out.println(
+							e.getEmpId() + "\t" + e.getName() + "\t" + e.getDesignation() + "\t" + e.getSalary());
+				}
 				break;
 			case 4:
 				System.out.println("Enter Employee Id for Search");
